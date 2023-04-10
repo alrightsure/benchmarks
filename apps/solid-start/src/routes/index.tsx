@@ -9,14 +9,12 @@ export const routeData = () => {
 };
 
 const Home = () => {
-    const startTime = new Date();
     const records = useRouteData<typeof routeData>();
 
     return (
         <main class="flex min-h-screen flex-col items-center justify-between p-24">
             <div class="flex flex-col items-center justify-center space-y-4">
                 <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">Solid Start</h1>
-                <h3>Seconds to load: {(new Date().getTime() - startTime.getTime()) / 1000}</h3>
                 <For each={records()}>
                     {record => (
                         <div>
