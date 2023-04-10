@@ -1,8 +1,6 @@
 import { drizzle } from "drizzle-orm/planetscale-serverless";
 import { connect } from "@planetscale/database";
 
-console.log(process.env["DATABASE_HOST"]);
-
 // create the connection
 const connection = connect({
     host: process.env["DATABASE_HOST"],
