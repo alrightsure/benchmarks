@@ -1,6 +1,8 @@
 import { db } from "@acme/db";
 import { records } from "@acme/db/schema";
 
+export const revalidate = 0;
+
 const getRecords = async () => {
     return await db.select().from(records);
 };
