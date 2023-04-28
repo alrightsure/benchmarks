@@ -15,6 +15,5 @@ module.exports = {
         v2_normalizeFormMethod: true,
         v2_routeConvention: true,
         unstable_tailwind: true
-    },
-    serverDependenciesToBundle: ["@acme/db","@acme/db/schema", "@planetscale/database"]
+    }
 };

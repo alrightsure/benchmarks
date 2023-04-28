@@ -7,13 +7,5 @@ export default defineConfig({
         solid({
             adapter: vercel({ edge: false })
         })
-    ],
-    optimizeDeps: {
-        include: ["@acme/db"]
-    },
-    build: {
-        commonjsOptions: {
-            include: [/@acme\/db/, /node_modules/]
-        }
-    }
+    ]
 });
