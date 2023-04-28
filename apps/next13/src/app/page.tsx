@@ -8,7 +8,7 @@ interface Pokemon {
 const getPokemon = async () => {
     const resp = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0");
     const { results } = (await resp.json()) as { results: Pokemon[] };
-    return results;
+    return [...results, ...results, ...results, ...results, ...results, ...results, ...results, ...results, ...results];
 };
 
 const Home = async () => {
